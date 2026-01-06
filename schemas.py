@@ -10,3 +10,10 @@ class User(BaseModel):
 class UserLogin(BaseModel):
     studentId: str
     password: str
+
+class ForgotPasswordRequest(BaseModel):
+    email: str
+
+class ResetPasswordRequest(BaseModel):
+    token: str
+    new_password: str

@@ -9,3 +9,4 @@ class UserDB(Base):
     email = Column(String(255), unique=True)
     studentId = Column(String(50), unique=True)
     password = Column(String(255))
+    reset_token = Column(String(255), nullable=True)
