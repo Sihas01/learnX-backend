@@ -10,3 +10,5 @@ class UserDB(Base):
     studentId = Column(String(50), unique=True)
     password = Column(String(255))
     reset_token = Column(String(255), nullable=True)
+    is_verified = Column(Integer, default=0)  
+    verification_token = Column(String(255), nullable=True)
